@@ -1,0 +1,44 @@
+{
+  "id": "1444586",
+  "name": "myIcon",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "799216",
+      "name": "旅游信息",
+      "font_class": "lvyouxinxi",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "1119630",
+      "name": "swt-icon-旅游",
+      "font_class": "swticonlvyou",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "3900143",
+      "name": "旅游主题_飞机",
+      "font_class": "tubiaozhizuomoban_feiji",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "9908901",
+      "name": "旅游攻略",
+      "font_class": "lvyougonglve",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "10721282",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    }
+  ]
+}
