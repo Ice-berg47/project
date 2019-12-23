@@ -100,3 +100,41 @@ for (var i = 0; i < hotSpan.length; i++) {
         hotlist[this.index].className = "tab-img show1";
     }
 }
+
+//登录
+var overlay = document.getElementsByClassName("overlay")[0];
+var win = document.getElementsByClassName("window")[0];
+var close = document.getElementsByClassName("close")[0];
+var login = document.getElementById("login");
+
+login.onclick = function() {
+    overlay.style.display = "block";
+    win.style.display = "block";
+}
+
+close.onclick = function() {
+    overlay.style.display = "none";
+    win.style.display = "none";
+}
+
+//登录验证
+var error_tip = document.getElementById("error_tip");
+var tip_span = error_tip.getElementsByTagName("span")[0];
+var aInput = document.getElementById("login_form").getElementsByTagName("input");
+var login_btn = document.getElementsByClassName("login_btn")[0];
+
+console.log(error_tip)
+console.log(tip_span)
+console.log(aInput)
+console.log(login_btn)
+
+login_btn.onclick = function() {
+    for (var i = 0; i < aInput.length; i++) {
+        if (aInput[i].value.length == 0) {
+            error_tip.style.display = "block";
+            return false;
+        }
+    }
+    error_tip.style.display = "none";
+    return true;
+}

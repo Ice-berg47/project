@@ -2,7 +2,8 @@ body ,ul ,li{
 	margin: 0;
     padding: 0;
 }
-body{height: 2000px;
+body{
+    height: 2000px;
 }
 ul {
 	list-style-type: none;
@@ -28,6 +29,189 @@ a {
     text-decoration: none;
 }
 
+/* login */
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    display: none;
+}
+
+.window {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 700px;
+    height: 400px;
+    z-index: 1002;
+    background-color: #fff;
+    margin-left: -330px;
+    margin-top: -200px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 10px #cdcdcd;
+    display: none;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 35px;
+    cursor: pointer;
+    color: #999;
+}
+
+.close:hover {
+    color: #000066;
+}
+
+.login_img {
+    width: 40%;
+    height: 100%;
+    border-right: 2px solid #b3b3b3;
+    box-shadow: 1px 0 4px #b3b3b3;
+    float: left;
+    overflow: hidden;
+}
+
+.login_img img {
+    margin-left: -180px;
+}
+
+.login_info {
+    width: 59%;
+    float: right;
+}
+
+.login_info_top {
+    height: 30%;
+    border-bottom: 2px solid #e5e5e5;
+    padding-left: 70px;
+    color: #000066;
+}
+
+.login_info_bottom {
+    height:69%;
+    font-size: 13px;
+    color: #b2b2b2;
+    position: relative;
+}
+
+#error_tip {
+    position: absolute;
+    top: -40px;
+    left: 70px;
+    height: 35px;
+    width: 253px;
+    padding: 0 13px;
+    background: url('../img/warning.png') no-repeat 10px 5px;
+    background-color: #ffebeb;
+    color: #e4393c;
+    border: 1px solid #faccc6;
+    display: none;
+}
+
+#error_tip span {
+    text-align: left;
+    font-size: 14px;
+    line-height: 35px;
+    margin-left: 25px;
+
+}
+
+.input_box {
+    margin: 50px 70px;
+}
+
+.login_info_bottom li {
+    width: 253px;
+    height: 42px;
+    display: block;
+    margin-top: 15px;
+}
+
+.form_control {
+    width: 100%;
+    padding: 13px 13px;
+    color: #666666;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-shadow: inset 0 3px 3px rgba(0,0,0,.075);
+}
+
+.a_register {
+    color: #2caeff;
+}
+
+.a_forget {
+    float: right;
+    position: relative;
+    left: 8px;
+}
+
+.a_forget:hover, .a_register:hover {
+    text-decoration: underline;
+}
+
+.login_btn {
+    height: 47px;
+    width: 282px;
+    color: #fff;
+    background-color: #9999ff;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.other_login {
+    margin-top: 30px;
+}
+
+.other_login span {
+    float: left;
+    font-size: 14px;
+}
+
+.other_login a {
+    background: url('../img/login_img.png') no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.other_login .wx {
+    background-position: -20px 0;
+}
+
+.other_login .weibo {
+    background-position: -40px 0;
+}
+
+.other_login .qq:hover {
+    background-position: 0 -20px;
+}
+
+.other_login .wx:hover {
+    background-position: -20px -20px;
+}
+
+.other_login .weibo:hover {
+    background-position: -40px -20px;
+}
 
 /* topbar */
 .topbar {

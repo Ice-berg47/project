@@ -9,6 +9,50 @@
     <link rel="stylesheet" href="css/font_1444586_ky7zfswkxog/iconfont.css">
 </head>
 <body>
+    <div class="login_show">
+        <div class="overlay"></div>
+        <div class="window">
+            
+            <div class="login_img">
+                <img src="./img/login_show.jpg" alt="">
+            </div>
+            <div class="login_info">
+                <div class="login_info_top">
+                    <div class="close">
+                        <span>&times;</span>
+                    </div>
+                    <h2>账户登录</h2>
+                </div> 
+                <div class="login_info_bottom">
+                    <div id="error_tip">
+                        <span class="tip">请输入账号和密码</span>
+                    </div>
+                    <div class="input_box">
+                        <form action="" id="login_form">
+                            <ul>
+                                <li>
+                                    <input class="form_control" type="text" placeholder="请输入邮箱账号/手机号">
+                                </li>
+                                <li>
+                                    <input class="form_control" type="password" placeholder="请输入密码">
+                                </li>
+                            </ul>
+                        </form>
+                        <p>还没有账号？ <a href="javascript:;" class="a_register">立即注册</a> <a href="javascript:;" class="a_forget">忘记密码?</a></p>
+                        <button class="login_btn">登 录</button>
+                        <div class="other_login">     
+                            <span>其他登录方式</span>
+                            <a href="javascript:;" class="qq"></a>
+                            <a href="javascript:;" class="wx"></a>
+                            <a href="javascript:;" class="weibo"></a>
+                        </div>
+                    </div>
+                </div> 
+ 
+            </div>
+        </div>
+    </div>
+        
     <div class="topbar">
         <div class="container"> 
             <div class="topbar-language">
@@ -18,7 +62,7 @@
                 <a href="">한국어</a>
             </div>
             <div class="topbar-info">
-                <a href="">登录</a>
+                <a id="login" href="javascript:;">登录</a>
                 <a href="">注册</a>
                 <a href="">消息通知</a>
             </div>
